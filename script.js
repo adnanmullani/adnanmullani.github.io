@@ -6,3 +6,24 @@ const cards=[...document.querySelectorAll('.project-card')];addEventListener('mo
 const reveal=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.animate([{opacity:0,transform:'translateY(45px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.8,.2,1)',fill:'forwards'});reveal.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.about-grid,.signal-row,.work-intro,.pipeline,.workflow-strip,.case-hero,.system-map,.case-details,.projects-title,.project-card,.security-grid,.stack-heading,.cloud-stage,.tool-wall,.journey-heading,.timeline,.contact-content').forEach(el=>{el.style.opacity=0;reveal.observe(el)});
 const scenes=[...document.querySelectorAll('.scene')];const sceneObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){document.body.dataset.scene=e.target.dataset.index}}),{threshold:.5});scenes.forEach(s=>sceneObs.observe(s));
 const magnetic=[...document.querySelectorAll('.magnetic')];magnetic.forEach(el=>el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.12}px,${(e.clientY-r.top-r.height/2)*.12}px)`}));magnetic.forEach(el=>el.addEventListener('mouseleave',()=>el.style.transform=''));
+
+const archData={
+code:['ACTIVE NODE / GIT','Every deployment starts with a controlled change.','GitHub branches and pull requests keep changes reviewable, traceable and ready for the next stage of the release pipeline.'],
+ci:['ACTIVE NODE / CI/CD','Automation turns every approved change into a repeatable release.','GitHub Actions handles build, validation and deployment workflows across protected develop, staging and production branches.'],
+container:['ACTIVE NODE / DOCKER','Containers make application delivery consistent.','Docker packages applications and their dependencies into repeatable runtime units that can move cleanly across environments.'],
+cloud:['ACTIVE NODE / CLOUD','Infrastructure should be reproducible.','AWS and Azure environments are provisioned, secured and connected with Terraform, load balancing, secrets and production routing.'],
+data:['ACTIVE NODE / DATA','Production data needs stability and controlled access.','PostgreSQL, RDS, ElastiCache, SQS and S3 support application data, caching, queues and durable storage in production systems.'],
+production:['ACTIVE NODE / PRODUCTION','Production should be reliable, observable and repeatable.','10+ production deployments across AWS and Azure, including zero-downtime migration work, SSL/DNS, monitoring and secure release workflows.']
+};
+const archNodes=[...document.querySelectorAll('.arch-node')];
+const archDetail=document.getElementById('archDetail');
+function activateArchNode(node){
+  archNodes.forEach(x=>x.classList.remove('active'));
+  node.classList.add('active');
+  const d=archData[node.dataset.node];
+  if(!d||!archDetail)return;
+  archDetail.innerHTML=`<span>${d[0]}</span><strong>${d[1]}</strong><p>${d[2]}</p>`;
+  archDetail.animate([{opacity:.35,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:350,easing:'ease-out'});
+}
+archNodes.forEach(node=>node.addEventListener('click',()=>activateArchNode(node)));
+
