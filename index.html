@@ -1,45 +1,298 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="pinpoint-site-verification" content="ed5947b4fc15c2ea17f5463c327a18cf">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Adnan Mullani — DevOps Engineer</title>
-<meta name="description" content="Adnan Mullani — DevOps Engineer building reliable production systems across AWS, Azure and GCP.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Adnan Mullani, DevOps Engineer in Mumbai. AWS, Azure, Terraform, Docker and Kubernetes for production SaaS infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="grain"></div><div class="grid-noise"></div><div class="cursor"></div><div class="cursor-dot"></div>
-<div class="boot" id="boot"><div class="bootline"><span>AM/OPS</span><span>PORTFOLIO // 2026</span></div><div class="bootcenter"><div class="tiny">BOOT SEQUENCE 001</div><h2>ADNAN<br><span>MULLANI</span></h2><div class="bootbar"><i></i></div><p id="bootLog">connecting cloud nodes...</p></div><div class="bootline bottom"><span>MUMBAI, INDIA</span><span>PRODUCTION READY</span></div></div>
-<header class="nav"><a class="logo" href="#top">AM<span>.</span></a><nav><a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#stack">STACK</a><a href="#journey">JOURNEY</a><a href="#contact">CONTACT</a></nav><div class="nav-right"><a class="nav-cta magnetic" href="assets/Adnan_Mullani_DevOps_Resume.pdf" target="_blank">DOWNLOAD RESUME ↗</a></div></header>
-<main id="top">
-<section class="hero scene" data-index="01">
-<canvas id="particles"></canvas><div class="hero-grid"></div><div class="hero-glow"></div>
-<div class="hero-top"><span class="status"><i></i> AVAILABLE FOR OPPORTUNITIES</span><span>01 / 08</span></div>
-<div class="hero-layout"><div class="hero-copy"><p class="eyebrow">CLOUD · AUTOMATION · PRODUCTION</p><h1><span>ADNAN</span><span class="accent">MULLANI</span></h1><p class="hero-desc">I engineer reliable infrastructure for applications that need to <strong>ship, scale and stay alive.</strong></p><div class="hero-actions"><a class="btn primary magnetic" href="#work">EXPLORE MY WORK <b>↗</b></a><a class="btn magnetic" href="mailto:mullaniadnan983@gmail.com">CONTACT ME</a></div><div class="stats"><div><strong>1.8+</strong><small>YEARS<br>EXPERIENCE</small></div><div><strong>10+</strong><small>PRODUCTION<br>DEPLOYMENTS</small></div><div><strong>3</strong><small>CLOUD<br>PLATFORMS</small></div></div></div>
-<div class="portrait-stage"><div class="orbit o1"></div><div class="orbit o2"></div><div class="crosshair"></div><div class="portrait-frame"><img src="assets/adnan.webp" width="480" height="853" fetchpriority="high" decoding="async" alt="Adnan Mullani — DevOps Engineer"><div class="frame-label top">DEVOPS ENGINEER / 2026</div><div class="frame-label bottom">MUMBAI · INDIA</div></div><div class="float-tag t1">AWS</div><div class="float-tag t2">AZURE</div><div class="float-tag t3">GCP</div><div class="float-tag t4">TERRAFORM</div></div></div>
-<div class="hero-side"><span>01</span><div></div><b>SCROLL<br>TO DEPLOY</b></div><div class="hero-foot"><span>BUILDING SYSTEMS, NOT JUST PIPELINES.</span><span>↓ SCROLL</span></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark">AM</a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-resume" href="assets/Adnan_Mullani_DevOps_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+</header>
+
+<main>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="status"><i></i>Available for new opportunities</p>
+      <h1>Adnan<br>Mullani</h1>
+      <p class="role">DevOps Engineer, based in Mumbai</p>
+      <p class="pitch">I build and run the cloud infrastructure behind production SaaS platforms — provisioning with Terraform, shipping through CI/CD, and keeping what's live actually reliable, across AWS and Azure.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">Explore my work</a>
+        <a href="mailto:mullaniadnan983@gmail.com" class="btn btn-ghost">Say hello</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>1.8+</dt><dd>Years in DevOps</dd></div>
+        <div><dt>3</dt><dd>Cloud Platforms</dd></div>
+        <div><dt>10+</dt><dd>Production Deployments</dd></div>
+        <div><dt>16+</dt><dd>CI/CD Workflows</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-visual">
+      <div class="scene" id="scene">
+        <div class="photo-frame">
+          <img class="cutout" src="assets/adnan-cutout.webp" alt="Adnan Mullani">
+        </div>
+
+        <div class="orbit-layer" aria-hidden="true">
+          <span class="hud-ring ring-1"></span>
+          <span class="hud-ring ring-2"></span>
+          <span class="hud-cross"></span>
+          <span class="hud-dot"></span>
+
+          <div class="orbit-spin">
+            <div class="orbit-pos pos-1"><span class="chip" style="color:#ff9c46">AWS</span></div>
+            <div class="orbit-pos pos-2"><span class="chip" style="color:#4aa3ff">Azure</span></div>
+            <div class="orbit-pos pos-3"><span class="chip" style="color:#5fd3c4">GCP</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="about scene" id="about" data-index="02"><div class="section-head"><span>02</span><p>THE ENGINEER</p></div><div class="about-grid"><div class="giant-word">RELIABLE<br><em>BY DESIGN.</em></div><div class="about-copy"><p class="lead">DevOps Engineer with <strong>1.8+ years</strong> of hands-on experience across cloud infrastructure, CI/CD automation, containerization, security hardening and production operations.</p><p>I work across the full deployment lifecycle — provisioning with Terraform, protected Git workflows, container platforms, migrations, observability and security.</p><div class="about-metrics"><div><b>10+</b><span>PRODUCTION<br>APPLICATIONS</span></div><div><b>3</b><span>CLOUD<br>ECOSYSTEMS</span></div><div><b>∞</b><span>AUTOMATION<br>MINDSET</span></div></div></div></div><div class="signal-row"><span>INFRASTRUCTURE</span><i></i><span>CI/CD</span><i></i><span>CONTAINERS</span><i></i><span>SECURITY</span><i></i><span>OBSERVABILITY</span></div></section>
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="about-copy">
+      <h2>Most of the job starts after "it works on my machine."</h2>
+      <p>I own deployments end to end for a multi-tenant SaaS platform &mdash; provisioning environments with Terraform, wiring up CI/CD, and making sure what ships stays healthy in production. I recently led a full infrastructure migration from AWS ECS to Azure Container Apps across staging and production, and closed out 10+ SOC2 audit findings along the way.</p>
+    </div>
+    <div class="about-list">
+      <div>
+        <h3>Infrastructure &amp; IaC</h3>
+        <p>Terraform-managed environments on AWS and Azure, from networking and compute to secrets management.</p>
+      </div>
+      <div>
+        <h3>Migrations &amp; releases</h3>
+        <p>Zero-downtime cutovers, container orchestration on ECS and Container Apps, and production database operations.</p>
+      </div>
+      <div>
+        <h3>Security &amp; compliance</h3>
+        <p>SOC2 remediation, Google CASA for OAuth verification, and VAPT-driven hardening.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="work scene" id="work" data-index="03"><div class="section-head"><span>03</span><p>THE DEPLOYMENT ENGINE</p></div><div class="work-intro"><div><p class="eyebrow">FROM COMMIT TO PRODUCTION</p><h2>SHIP FASTER.<br><em>BREAK LESS.</em></h2></div><p>Every deployment is a chain of decisions. I build that chain to be repeatable, observable and safe.</p></div><div class="pipeline" id="pipeline"><div class="pipeline-track"><i></i></div><article><span>01</span><div class="node-icon">⌘</div><b>CODE</b><small>Git / PR</small></article><article><span>02</span><div class="node-icon">⚙</div><b>BUILD</b><small>GitHub Actions</small></article><article><span>03</span><div class="node-icon">▣</div><b>CONTAINER</b><small>Docker / Kubernetes</small></article><article><span>04</span><div class="node-icon">☁</div><b>CLOUD</b><small>AWS / Azure / GCP</small></article><article><span>05</span><div class="node-icon">◉</div><b>MONITORING</b><small>Grafana / Logs</small></article></div><div class="workflow-strip"><span>DEVELOP</span><b>→</b><span>STAGING</span><b>→</b><span>PRODUCTION</span><b>→</b><span>MONITORED</span></div></section>
+<section class="experience" id="experience">
+  <div class="section-inner">
+    <h2>Where I've worked</h2>
+    <div class="timeline">
+      <article class="current">
+        <time>2024 — Now</time>
+        <div>
+          <h3>DevOps Engineer</h3>
+          <p class="place">XLNC Technologies</p>
+          <p>Own deployments across AWS and Azure for a multi-tenant SaaS platform &mdash; Terraform, Docker, Kubernetes, CI/CD, and production security.</p>
+        </div>
+      </article>
+      <article>
+        <time>2023 — 2024</time>
+        <div>
+          <h3>EDI Developer</h3>
+          <p class="place">XLNC Technologies</p>
+          <p>Built EDI mappings and transformations (810, 856, 850, INVOIC) on Cleo Integration Cloud.</p>
+        </div>
+      </article>
+      <article>
+        <time>2023</time>
+        <div>
+          <h3>Software Engineer Intern</h3>
+          <p class="place">Masstech Business Solutions</p>
+          <p>ASP.NET, C# and SQL Server &mdash; shipping responsive UI and optimizing queries.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
+<section class="work" id="work">
+  <div class="section-inner">
+    <h2>How I ship</h2>
+    <p class="work-lead">Every deployment moves through the same checkpoints, whichever cloud it lands on.</p>
 
-<section class="architecture scene" data-index="04A" id="architecture"><div class="section-head"><span>04A</span><p>LIVE ARCHITECTURE / INTERACTIVE</p></div><div class="arch-head"><div><p class="eyebrow">HOW PRODUCTION MOVES</p><h2>COMMIT TO<br><em>CONFIDENCE.</em></h2></div><p>Move across the system. Each node reveals the responsibility behind the deployment path.</p></div><div class="arch-board" id="archBoard"><div class="arch-line l1"></div><div class="arch-line l2"></div><div class="arch-line l3"></div><div class="arch-line l4"></div><div class="arch-line l5"></div><div class="arch-line l6"></div><div class="arch-line l7"></div><div class="arch-line l8"></div><div class="arch-label">DEPLOYMENT PATH</div><div class="arch-node" data-node="code" style="--x:7%;--y:42%"><span>01</span><b>GIT</b><small>CODE + PR</small></div><div class="arch-node" data-node="ci" style="--x:27%;--y:20%"><span>02</span><b>CI/CD</b><small>GITHUB ACTIONS</small></div><div class="arch-node" data-node="container" style="--x:49%;--y:55%"><span>03</span><b>DOCKER</b><small>CONTAINER BUILD</small></div><div class="arch-node" data-node="cloud" style="--x:71%;--y:20%"><span>04</span><b>CLOUD</b><small>AWS / AZURE</small></div><div class="arch-node" data-node="data" style="--x:88%;--y:55%"><span>05</span><b>DATA</b><small>POSTGRES / CACHE</small></div><button class="arch-node production-node" data-node="production" style="--x:71%;--y:78%"><span>06</span><b>PRODUCTION</b><small>EXPLORE DETAILS →</small></button></div><div class="arch-detail" id="archDetail"><span>ACTIVE NODE / PRODUCTION</span><strong>Production should be reliable, observable and repeatable.</strong><p>10+ production deployments across AWS and Azure, including zero-downtime migration work, SSL/DNS, monitoring and secure release workflows.</p></div></section>
+    <div class="pipeline">
+      <div class="pipeline-track"><span class="pipeline-glow"></span></div>
+      <div class="pipeline-step" style="animation-delay:0s">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="12" r="2.2"/><path d="M6 8.2V15.8M8 6.6c4 .4 6 2 8 4"/></svg>
+        <h3>Code</h3>
+        <p>Git / PR</p>
+      </div>
+      <div class="pipeline-step" style="animation-delay:1.2s">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><path d="M19 12a7 7 0 0 0-.1-1.2l1.8-1.4-1.8-3-2.1.8a7 7 0 0 0-1.8-1l-.3-2.2h-3.4l-.3 2.2a7 7 0 0 0-1.8 1l-2.1-.8-1.8 3L7.1 11a7 7 0 0 0 0 2.4L5.3 14.8l1.8 3 2.1-.8a7 7 0 0 0 1.8 1l.3 2.2h3.4l.3-2.2a7 7 0 0 0 1.8-1l2.1.8 1.8-3-1.8-1.4c.07-.4.1-.8.1-1.2Z"/></svg>
+        <h3>Build</h3>
+        <p>GitHub Actions</p>
+      </div>
+      <div class="pipeline-step" style="animation-delay:2.4s">
+        <svg class="icon" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="1.5"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/></svg>
+        <h3>Container</h3>
+        <p>Docker / Kubernetes</p>
+      </div>
+      <div class="pipeline-step" style="animation-delay:3.6s">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M6.5 18a4 4 0 0 1-.6-7.96 5 5 0 0 1 9.8-1.7A4.5 4.5 0 0 1 17.5 18h-11Z"/></svg>
+        <h3>Cloud</h3>
+        <p>AWS / Azure / GCP</p>
+      </div>
+      <div class="pipeline-step" style="animation-delay:4.8s">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-7M19 19V11"/></svg>
+        <h3>Monitoring</h3>
+        <p>Grafana / Logs</p>
+      </div>
+    </div>
 
-<section class="case scene" data-index="04"><div class="section-head"><span>04</span><p>CASE STUDY / 001</p></div><div class="case-hero"><div><p class="eyebrow">INBOX-IQ · AI EMAIL TRIAGE SAAS</p><h2>FROM ZERO<br>TO <em>PRODUCTION.</em></h2></div><div class="case-number">001</div></div><div class="system-map"><div class="map-node n1"><span>INGRESS</span><b>DNS + SSL</b><small>ALB / ACM</small></div><i></i><div class="map-node n2"><span>COMPUTE</span><b>DOCKER → ECS</b><small>Azure Container Apps</small></div><i></i><div class="map-node n3"><span>DATA</span><b>RDS POSTGRES</b><small>ElastiCache · SQS · S3</small></div></div><div class="case-details"><div><span>INFRA</span><p>Built the AWS environment from scratch with Terraform and Docker, then connected protected develop, staging and production workflows.</p></div><div><span>MIGRATION</span><p>Led the AWS ECS → Azure Container Apps migration and production go-live with DNS, SSL and zero-downtime cutover.</p></div><div><span>PRODUCT OPS</span><p>Supported payments, mobile release operations, CASA, VAPT and security remediation around the production platform.</p></div></div></section>
+    <h2 class="sub-heading case-heading">Inbox IQ</h2>
+    <p class="work-lead">An internal email-triage SaaS product I've owned since it was a blank AWS account.</p>
 
-<section class="projects scene" data-index="05"><div class="section-head"><span>05</span><p>PRODUCTION SYSTEMS</p></div><div class="projects-title"><p class="eyebrow">SELECTED WORK</p><h2>REAL SYSTEMS.<br><em>REAL RESPONSIBILITY.</em></h2></div><div class="project-deck"><article class="project-card"><div class="card-top"><span>002</span><span>01 / 03</span></div><div class="card-orb">FM</div><h3>FM<br>LOGISTICS</h3><p>Shared AWS infrastructure for a multi-client logistics platform with isolated environments, access controls, RDS and structured CI/CD.</p><div class="tags"><i>AWS</i><i>RDS</i><i>CI/CD</i></div></article><article class="project-card featured"><div class="card-top"><span>003</span><span>02 / 03</span></div><div class="card-orb">∞</div><h3>ENTERPRISE<br>DEPLOYMENTS</h3><p>Production delivery across Playground, Website Auditor, AI-Auditor, Close CRM, BAMFoods, Billshaw Photography and UFC Gym applications.</p><div class="tags"><i>GITHUB ACTIONS</i><i>SSL</i><i>GRAFANA</i></div></article><article class="project-card"><div class="card-top"><span>004</span><span>03 / 03</span></div><div class="card-orb">APP</div><h3>RELEASE<br>ENGINEERING</h3><p>Firebase configuration, Play Store / App Store operations, Apple IAP, DACPAC deployments, Linux systemd and release pipelines.</p><div class="tags"><i>MOBILE</i><i>LINUX</i><i>DATABASE</i></div></article></div></section>
+    <div class="architecture">
+      <div class="arch-row">
+        <div class="arch-box">Frontend</div>
+        <div class="arch-box">Backend</div>
+        <div class="arch-box">Worker / Scheduler</div>
+      </div>
+      <svg class="arch-funnel" viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true">
+        <path class="funnel-line" d="M50,0 L150,40"/>
+        <path class="funnel-line" d="M150,0 L150,40"/>
+        <path class="funnel-line" d="M250,0 L150,40"/>
+        <circle class="funnel-dot" r="3">
+          <animateMotion dur="2.2s" repeatCount="indefinite" path="M50,0 L150,40"/>
+        </circle>
+        <circle class="funnel-dot" r="3">
+          <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.4s" path="M150,0 L150,40"/>
+        </circle>
+        <circle class="funnel-dot" r="3">
+          <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.8s" path="M250,0 L150,40"/>
+        </circle>
+      </svg>
+      <div class="arch-line"></div>
+      <div class="arch-row single">
+        <div class="arch-box arch-pipeline">Docker → ACR → Azure Container Apps</div>
+      </div>
+      <div class="arch-line d2"></div>
+      <div class="arch-row single">
+        <div class="arch-box arch-data">PostgreSQL (AWS RDS)</div>
+      </div>
+    </div>
 
-<section class="security scene" data-index="06"><div class="section-head"><span>06</span><p>SECURITY / COMPLIANCE</p></div><div class="security-grid"><div class="security-title"><p class="eyebrow">SECURITY IS PART OF SHIPPING</p><h2>HARDEN.<br>VERIFY.<br><em>TRUST.</em></h2><p>Production reliability is more than uptime. It is secure identity, controlled access, evidence and repeatable remediation.</p></div><div class="security-list"><article><span>01</span><b>SOC2</b><p>Resolved 10+ security findings including OAuth token handling, JWT configuration and dependency CVEs.</p></article><article><span>02</span><b>GOOGLE CASA</b><p>Guided the Cloud Application Security Assessment process for OAuth verification.</p></article><article><span>03</span><b>VAPT</b><p>Reviewed vulnerability assessment findings and coordinated remediation.</p></article><article><span>04</span><b>ISO 27001 / 27701</b><p>Maintained policies, evidence registers and certification-readiness tracking.</p></article><article><span>05</span><b>SECRETS / SSL</b><p>AWS Secrets Manager, Azure Key Vault, ACM and application routing across production environments.</p></article></div></div></section>
+    <ul class="highlights">
+      <li>Migrated staging (<code>staging.inbox-iq.ai</code>) to production (<code>inbox-iq.ai</code>) by reusing existing AWS infrastructure, updating DNS, issuing new ACM certificates and swapping in live Stripe and Razorpay keys.</li>
+      <li>Tracked down a database migration bug caused by SQLite-only syntax running against Postgres, and fixed it.</li>
+      <li>Moved CI/CD off floating <code>latest</code> tags to commit-SHA tagging, to stop stale ECS deployments.</li>
+      <li>Led the broader ECS to Azure Container Apps migration across multiple client tenant instances.</li>
+    </ul>
 
-<section class="stack scene" id="stack" data-index="07"><div class="section-head"><span>07</span><p>THE STACK</p></div><div class="stack-heading"><p class="eyebrow">TOOLS THAT SHIP THE WORK</p><h2>THREE CLOUDS.<br><em>ONE SYSTEM.</em></h2></div><div class="cloud-stage"><div class="cloud-card aws"><div class="cloud-logo">aws</div><h3>AWS</h3><p>EC2 · ECS · ALB · RDS<br>ACM · Secrets Manager · Bedrock</p></div><div class="cloud-card azure"><div class="cloud-logo">A</div><h3>AZURE</h3><p>Container Apps · Key Vault<br>Azure DevOps · App Gateway</p></div><div class="cloud-card gcp"><div class="cloud-logo">G</div><h3>GCP</h3><p>Cloud platform<br>familiarity</p></div><div class="stack-core"><div>IaC</div><div>CI/CD</div><div>CONTAINERS</div><div>MONITORING</div></div></div><div class="tool-wall"><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Linux</span><span>Bash</span><span>Grafana</span><span>PostgreSQL</span><span>SQL Server</span><span>Python</span><span>Git</span><span>OAuth 2.0</span><span>systemd</span></div></section>
+    <h2 class="sub-heading">Other production work</h2>
+    <div class="projects">
+      <article class="project">
+        <h3>FM Logistics</h3>
+        <p>Shared AWS infrastructure for a multi-client logistics platform, with isolated environments, access controls and structured CI/CD.</p>
+      </article>
+      <article class="project">
+        <h3>Enterprise deployments</h3>
+        <p>Production delivery and ongoing support for Playground, Website Auditor, AI-Auditor, Close CRM, BAMFoods, Billshaw Photography and UFC Gym.</p>
+      </article>
+      <article class="project">
+        <h3>Release engineering</h3>
+        <p>Firebase configuration, Play Store and App Store releases, Apple in-app purchases, DACPAC deployments and Linux systemd services.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-<section class="journey scene" id="journey" data-index="08"><div class="section-head"><span>08</span><p>THE JOURNEY</p></div><div class="journey-heading"><p class="eyebrow">FROM CODE TO CLOUD</p><h2>THE PATH<br><em>SO FAR.</em></h2></div><div class="timeline"><div class="timeline-line"><i></i></div><article><time>2023</time><div><small>MASSTECH BUSINESS SOLUTIONS</small><h3>SOFTWARE ENGINEER INTERN</h3><p>ASP.NET · C# · SQL Server · responsive UI · SQL optimization.</p></div></article><article><time>2023—24</time><div><small>XLNC TECHNOLOGIES</small><h3>EDI DEVELOPER</h3><p>EDI 810 · 856 · 850 · INVOIC · mapping, transformation and Cleo Integration Cloud.</p></div></article><article class="current"><time>2024—NOW</time><div><small>XLNC TECHNOLOGIES</small><h3>DEVOPS ENGINEER</h3><p>AWS · Azure · Terraform · Docker · CI/CD · security · monitoring · production operations.</p></div></article></div></section>
+<section class="stack" id="stack">
+  <div class="section-inner">
+    <h2>What I build with</h2>
 
-<section class="contact scene" id="contact"><div class="contact-orb"></div><div class="contact-content"><p class="eyebrow">NEXT DEPLOYMENT</p><h2>LET'S BUILD<br><em>SOMETHING RELIABLE.</em></h2><p class="contact-lead">Have a production system that needs to move faster, scale better or become safer?</p><a class="email magnetic" href="mailto:mullaniadnan983@gmail.com">MULLANIADNAN983@GMAIL.COM ↗</a><div class="contact-links"><a href="https://www.linkedin.com/in/adnan-mullani" target="_blank">LINKEDIN ↗</a><a href="https://github.com/adnanmullani" target="_blank">GITHUB ↗</a><a href="assets/Adnan_Mullani_DevOps_Resume.pdf" target="_blank">RESUME ↗</a></div></div><footer><span>ADNAN MULLANI / DEVOPS ENGINEER</span><span>MUMBAI, INDIA</span><span>© 2026</span></footer></section>
+    <div class="stack-group">
+      <h4>Cloud</h4>
+      <div class="chips">
+        <span class="chip" style="--c:#ff9c46"><svg class="icon" viewBox="0 0 24 24"><path d="M6.5 18a4 4 0 0 1-.6-7.96 5 5 0 0 1 9.8-1.7A4.5 4.5 0 0 1 17.5 18h-11Z"/></svg>AWS</span>
+        <span class="chip" style="--c:#4aa3ff"><svg class="icon" viewBox="0 0 24 24"><path d="M6.5 18a4 4 0 0 1-.6-7.96 5 5 0 0 1 9.8-1.7A4.5 4.5 0 0 1 17.5 18h-11Z"/></svg>Azure</span>
+        <span class="chip" style="--c:#5fd3c4"><svg class="icon" viewBox="0 0 24 24"><path d="M6.5 18a4 4 0 0 1-.6-7.96 5 5 0 0 1 9.8-1.7A4.5 4.5 0 0 1 17.5 18h-11Z"/></svg>GCP</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <h4>Infra &amp; containers</h4>
+      <div class="chips">
+        <span class="chip" style="--c:#8b6bff"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 12l9 5 9-5"/><path d="M3 16l9 5 9-5"/></svg>Terraform</span>
+        <span class="chip" style="--c:#4aa3ff"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="1.5"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/></svg>Docker</span>
+        <span class="chip" style="--c:#4aa3ff"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3.5 20 8v8l-8 4.5L4 16V8l8-4.5Z"/><circle cx="12" cy="12" r="2.6"/></svg>Kubernetes</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <h4>CI/CD &amp; ops</h4>
+      <div class="chips">
+        <span class="chip" style="--c:#e8e8ee"><svg class="icon" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="12" r="2.2"/><path d="M6 8.2V15.8M8 6.6c4 .4 6 2 8 4"/></svg>GitHub Actions</span>
+        <span class="chip" style="--c:#4aa3ff"><svg class="icon" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="12" r="2.2"/><path d="M6 8.2V15.8M8 6.6c4 .4 6 2 8 4"/></svg>Azure DevOps</span>
+        <span class="chip" style="--c:#ff8a5c"><svg class="icon" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="12" r="2.2"/><path d="M6 8.2V15.8M8 6.6c4 .4 6 2 8 4"/></svg>Git</span>
+        <span class="chip" style="--c:#ffb454"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M7 16h10M7 9.5l3 2.5-3 2.5"/></svg>Linux &amp; Bash</span>
+        <span class="chip" style="--c:#ff9c46"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-7M19 19V11"/></svg>Grafana</span>
+        <span class="chip" style="--c:#5fd3c4"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3Z"/></svg>OAuth 2.0</span>
+        <span class="chip" style="--c:#8b9bb4"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><path d="M19 12a7 7 0 0 0-.1-1.2l1.8-1.4-1.8-3-2.1.8a7 7 0 0 0-1.8-1l-.3-2.2h-3.4l-.3 2.2a7 7 0 0 0-1.8 1l-2.1-.8-1.8 3L7.1 11a7 7 0 0 0 0 2.4L5.3 14.8l1.8 3 2.1-.8a7 7 0 0 0 1.8 1l.3 2.2h3.4l.3-2.2a7 7 0 0 0 1.8-1l2.1.8 1.8-3-1.8-1.4c.07-.4.1-.8.1-1.2Z"/></svg>systemd</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <h4>Data &amp; language</h4>
+      <div class="chips">
+        <span class="chip" style="--c:#4aa3ff"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4c4 0 7 1.1 7 2.5S16 9 12 9 5 7.9 5 6.5 8 4 12 4Z"/><path d="M5 6.5V17c0 1.4 3 2.5 7 2.5s7-1.1 7-2.5V6.5"/><path d="M5 11.75c0 1.4 3 2.5 7 2.5s7-1.1 7-2.5"/></svg>PostgreSQL</span>
+        <span class="chip" style="--c:#5fd3c4"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4c4 0 7 1.1 7 2.5S16 9 12 9 5 7.9 5 6.5 8 4 12 4Z"/><path d="M5 6.5V17c0 1.4 3 2.5 7 2.5s7-1.1 7-2.5V6.5"/><path d="M5 11.75c0 1.4 3 2.5 7 2.5s7-1.1 7-2.5"/></svg>SQL Server</span>
+        <span class="chip" style="--c:#ffd24a"><svg class="icon" viewBox="0 0 24 24"><path d="M8 4h5a2 2 0 0 1 2 2v3H9a3 3 0 0 0-3 3v2H4.5A2.5 2.5 0 0 1 2 11.5v-1A2.5 2.5 0 0 1 4.5 8H8V4Z"/><path d="M16 20h-5a2 2 0 0 1-2-2v-3h6a3 3 0 0 0 3-3V10h1.5a2.5 2.5 0 0 1 2.5 2.5v1a2.5 2.5 0 0 1-2.5 2.5H16v4Z"/></svg>Python</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="security">
+  <div class="section-inner">
+    <h2>Security &amp; compliance</h2>
+    <div class="sec-grid">
+      <div><h4>SOC2</h4><p>Resolved 10+ findings &mdash; OAuth token handling, JWT config, dependency CVEs.</p></div>
+      <div><h4>Google CASA</h4><p>Guided the Cloud Application Security Assessment for OAuth verification.</p></div>
+      <div><h4>VAPT</h4><p>Reviewed findings and coordinated remediation.</p></div>
+      <div><h4>ISO 27001 / 27701</h4><p>Maintained policies and evidence for certification-readiness.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <h2>Let's talk infrastructure</h2>
+    <p>Got a system that needs to ship faster, scale better, or move cloud without breaking? I'd like to hear about it.</p>
+    <a class="email" href="mailto:mullaniadnan983@gmail.com">mullaniadnan983@gmail.com</a>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/adnan-mullani" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/adnanmullani" target="_blank" rel="noopener">GitHub</a>
+      <a href="assets/Adnan_Mullani_DevOps_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<footer>
+  <span>Adnan Mullani &mdash; DevOps Engineer</span>
+  <span>Mumbai, India</span>
+</footer>
+
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
