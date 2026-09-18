@@ -125,7 +125,7 @@ img{max-width:100%;display:block}
 }
 .cutout{
   position:relative;z-index:1;width:100%;height:100%;
-  object-fit:cover;object-position:38% 12%;
+  object-fit:cover;object-position:center 8%;
   filter:saturate(1.05) contrast(1.03);
 }
 
